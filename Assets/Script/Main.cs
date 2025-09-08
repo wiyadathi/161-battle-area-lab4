@@ -21,9 +21,9 @@ public class Main : MonoBehaviour
     void Setup()
     {
         //create monsters
-        monsters.Add(new Monster("Orc", 25, 5, 3));
+/*        monsters.Add(new Monster("Orc", 25, 5, 3));
         monsters.Add(new Monster("Goblin", 30, 10, 6));
-        monsters.Add(new Monster("Dragon", 35, 15, 10));
+        monsters.Add(new Monster("Dragon", 35, 15, 10));*/
 
         Debug.Log("**** Battle Arena ****");
         Debug.Log("-- Monsters Data --: ");

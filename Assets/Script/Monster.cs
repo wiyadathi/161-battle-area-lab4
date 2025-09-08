@@ -1,21 +1,30 @@
 using UnityEngine;
 //using System.Diagnostics;
 
-public class Monster
+public class Monster: MonoBehaviour
 {
-    public string Name { get; set; }
+    [SerializeField] string name;
+    public string Name {
+        get => name;
+        set => name = value;
+    }
 
     //Property: health Cannot be less than 0
-    private int health;
+    [SerializeField] private int health;
     public int Health
     {
         get => health;
         set => health = (value < 0) ? 0 : value;
     }
 
-    public int AttackPower { get; set; }
+    [SerializeField] int attackPower;
+    public int AttackPower 
+    { 
+        get => attackPower; 
+        set => attackPower = value; 
+    }
 
-    private int lootGold;
+    [SerializeField] private int lootGold;
     public int LootGold 
     {
         get { return lootGold; }
